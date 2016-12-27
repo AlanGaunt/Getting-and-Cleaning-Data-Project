@@ -18,7 +18,7 @@ ifelse(length(dt) == 28, "Download & Unzip Succesful", "Download & Unzip Failed"
 ## Labels & Features
 
 activity_labels = read.table('./data/UCI HAR Dataset/activity_labels.txt')
-features <- read.table('./data/UCI HAR Dataset/features.txt')
+features = read.table('./data/UCI HAR Dataset/features.txt')
 
 ##Testing
 
@@ -53,7 +53,7 @@ all_data = rbind(test_data, train_data)
 
 colnames(all_data) = c("Activity", "SubjectID", featuresWanted.names)
 
-## Convert activites and subjects into factors
+## Correct activity and subject names
 
 all_data$Activity = factor(all_data$Activity, levels = activity_labels[,1], labels = activity_labels[,2])
 all_data$SubjectID = as.factor(all_data$SubjectID)
