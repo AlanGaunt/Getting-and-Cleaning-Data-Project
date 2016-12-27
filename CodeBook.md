@@ -1,6 +1,19 @@
 # Code Book #
 
-This code book summarizes data fields in `tidy.txt`. It's important to note that `tidy-mean.txt` represents that mean value of `tidy.txt` which can be found by runnning the script run_analysis.R.
+This code book summarizes the steps taken in `run_analysis.R` and the data fields found in `tidy-mean.txt`. It's important to note that `tidy-mean.txt` represents that mean values of `tidy.txt` which can be found by runnning the script `run_analysis.R`.
+
+================================
+**Summary of `run_analysis.R`**
+
+1. Training and test datasets are downloaded and unzipped; dataset is filtered to pull only columns with mean and standard deviation measures using the grep() function
+2. Columns are given the correct names from `features.txt`
+2. Training and test data is merged using the rbind() function to create combined dataset called `all_data` 
+3. Activity and subject column names are corrected to be more understandable
+4. A new, tidy dataset called `tidy_data` is generated using the melt() function
+5. A second, tidy dataset called `tidy_data.mean` is created which calcualtes the mean values in `tidy_data` using thdcast() function.
+
+================================
+Summary of data fields found in `tidy-mean.txt`
 
 **Dimensions**
 
