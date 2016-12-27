@@ -1,13 +1,13 @@
 # Code Book #
 
-This code book summarizes the resulting data fields in `tidy.txt`.
+This code book summarizes data fields in `tidy.txt`. It's important to note that `tidy-mean.txt` represents that mean value of `tidy.txt` which can be found by runnning the script run_analysis.R.
 
-## Dimensions
+**Dimensions**
 
-* `SubjectID` - The ID of the test subject
-* `Activity` - The type of activity performed when the corresponding measurements were taken
+* `Activity` - The type of activity performed when data was collected
+* `SubjectID` - The ID of the test subject (1 - 30 possible) 
 
-## Measurements
+**Measurements**
 
 * `tBodyAccMeanX`
 * `tBodyAccMeanY`
@@ -88,12 +88,3 @@ This code book summarizes the resulting data fields in `tidy.txt`.
 * `fBodyBodyGyroJerkMagMean`
 * `fBodyBodyGyroJerkMagStd`
 * `fBodyBodyGyroJerkMagMeanFreq`
-
-**Activity definitions**
-
-1. WALKING: subject was walking during the test
-2. WALKING_UPSTAIRS: subject was walking up a staircase during the test
-3. WALKING_DOWNSTAIRS: subject was walking down a staircase during the test
-4. SITTING: subject was sitting during the test
-5. STANDING: subject was standing during the test
-6. LAYING: subject was laying down during the test
